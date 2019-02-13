@@ -3,7 +3,6 @@
 #include "pch.h"
 #include <iostream>
 #include <string>
-#include <iostream>
 #include <conio.h>
 #include <algorithm>
 #include <vector>
@@ -48,11 +47,11 @@ double clsCustomer::GetTotalEarnings()
 }
 
 //Asks for the amount of customers to be stored in the system
-void UserAmount(vector <clsCustomer> *objUserAmount)
+void UserAmount(vector <clsCustomer> *objCustomerPass)
 {
-	int iUserAmount;
-	for (int iCount = 0; iCount < objUserAmount->size(); iCount++)
+	for (int iCount = 0; iCount < objCustomerPass->size(); iCount++)
 	{
+		int iUserAmount;
 		cout << "Please insert the amount of customers \n" << iCount + 1;
 		cin >> iUserAmount;
 		cout << "User created \n";

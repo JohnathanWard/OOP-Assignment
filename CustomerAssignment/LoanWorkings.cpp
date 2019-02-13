@@ -45,3 +45,23 @@ void ShowLoanInformation(vector <clsCustomer> *objCustomerPass)
 	}
 }
 */
+
+void AgeInfo(vector <clsCustomer> *objCustomerPass)
+{
+	int iAge;
+	for (int iCount = 0; iCount < objCustomerPass.size(); iCount++) {
+		if (iAge < 18)
+		{
+			cout << "Customer is too young";
+		}
+		else if (iAge > 18 < 21)
+		{
+			cout << "Customer qualifies for a short term loan";
+		}
+		else (iAge > 21)
+		{
+			cout << "Customer qualifies for a long term loan";
+		}
+	}
+}
+
