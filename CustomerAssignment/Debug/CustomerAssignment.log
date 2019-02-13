@@ -1,42 +1,7 @@
 ﻿  CustomerClass.cpp
-c:\users\james\source\repos\customerassignment\customerassignment\loanworkings.cpp(12): error C2653: 'clsLoanWorkings': is not a class or namespace name
-c:\users\james\source\repos\customerassignment\customerassignment\loanworkings.cpp(14): error C2065: 'dTotal': undeclared identifier
-c:\users\james\source\repos\customerassignment\customerassignment\loanworkings.cpp(17): error C2653: 'clsLoanWorkings': is not a class or namespace name
-c:\users\james\source\repos\customerassignment\customerassignment\loanworkings.cpp(19): error C2065: 'dTotal': undeclared identifier
-c:\users\james\source\repos\customerassignment\customerassignment\loanworkings.cpp(22): error C2653: 'clsLoanWorkings': is not a class or namespace name
-c:\users\james\source\repos\customerassignment\customerassignment\loanworkings.cpp(24): error C2065: 'dTotalPayable': undeclared identifier
-c:\users\james\source\repos\customerassignment\customerassignment\loanworkings.cpp(27): error C2653: 'clsLoanWorkings': is not a class or namespace name
-c:\users\james\source\repos\customerassignment\customerassignment\loanworkings.cpp(29): error C2065: 'dTotalPayable': undeclared identifier
-c:\users\james\source\repos\customerassignment\customerassignment\loanworkings.cpp(32): error C2065: 'clsLoan': undeclared identifier
-c:\users\james\source\repos\customerassignment\customerassignment\loanworkings.cpp(32): error C2923: 'std::vector': 'clsLoan' is not a valid template type argument for parameter '_Ty'
-c:\users\james\source\repos\customerassignment\customerassignment\loanworkings.cpp(32): error C2903: 'allocator': symbol is neither a class template nor a function template
-c:\users\james\source\repos\customerassignment\customerassignment\loanworkings.cpp(32): error C3203: 'allocator': unspecialized class template can't be used as a template argument for template parameter '_Alloc', expected a real type
-c:\users\james\source\repos\customerassignment\customerassignment\customerclass.cpp(85): warning C4018: '<': signed/unsigned mismatch
-c:\users\james\source\repos\customerassignment\customerassignment\customerclass.cpp(104): warning C4018: '<': signed/unsigned mismatch
+c:\users\james\source\repos\customerassignment\customerassignment\customerclass.cpp(72): warning C4018: '<': signed/unsigned mismatch
+c:\users\james\source\repos\customerassignment\customerassignment\customerclass.cpp(91): warning C4018: '<': signed/unsigned mismatch
   LoanClass.cpp
-c:\users\james\source\repos\customerassignment\customerassignment\loanworkings.cpp(12): error C2653: 'clsLoanWorkings': is not a class or namespace name
-c:\users\james\source\repos\customerassignment\customerassignment\loanworkings.cpp(14): error C2065: 'dTotal': undeclared identifier
-c:\users\james\source\repos\customerassignment\customerassignment\loanworkings.cpp(17): error C2653: 'clsLoanWorkings': is not a class or namespace name
-c:\users\james\source\repos\customerassignment\customerassignment\loanworkings.cpp(19): error C2065: 'dTotal': undeclared identifier
-c:\users\james\source\repos\customerassignment\customerassignment\loanworkings.cpp(22): error C2653: 'clsLoanWorkings': is not a class or namespace name
-c:\users\james\source\repos\customerassignment\customerassignment\loanworkings.cpp(24): error C2065: 'dTotalPayable': undeclared identifier
-c:\users\james\source\repos\customerassignment\customerassignment\loanworkings.cpp(27): error C2653: 'clsLoanWorkings': is not a class or namespace name
-c:\users\james\source\repos\customerassignment\customerassignment\loanworkings.cpp(29): error C2065: 'dTotalPayable': undeclared identifier
-c:\users\james\source\repos\customerassignment\customerassignment\loanworkings.cpp(32): error C2065: 'clsLoan': undeclared identifier
-c:\users\james\source\repos\customerassignment\customerassignment\loanworkings.cpp(32): error C2923: 'std::vector': 'clsLoan' is not a valid template type argument for parameter '_Ty'
-c:\users\james\source\repos\customerassignment\customerassignment\loanworkings.cpp(32): error C2903: 'allocator': symbol is neither a class template nor a function template
-c:\users\james\source\repos\customerassignment\customerassignment\loanworkings.cpp(32): error C3203: 'allocator': unspecialized class template can't be used as a template argument for template parameter '_Alloc', expected a real type
   LoanWorkings.cpp
-c:\users\james\source\repos\customerassignment\customerassignment\loanworkings.cpp(12): error C2653: 'clsLoanWorkings': is not a class or namespace name
-c:\users\james\source\repos\customerassignment\customerassignment\loanworkings.cpp(14): error C2065: 'dTotal': undeclared identifier
-c:\users\james\source\repos\customerassignment\customerassignment\loanworkings.cpp(17): error C2653: 'clsLoanWorkings': is not a class or namespace name
-c:\users\james\source\repos\customerassignment\customerassignment\loanworkings.cpp(19): error C2065: 'dTotal': undeclared identifier
-c:\users\james\source\repos\customerassignment\customerassignment\loanworkings.cpp(22): error C2653: 'clsLoanWorkings': is not a class or namespace name
-c:\users\james\source\repos\customerassignment\customerassignment\loanworkings.cpp(24): error C2065: 'dTotalPayable': undeclared identifier
-c:\users\james\source\repos\customerassignment\customerassignment\loanworkings.cpp(27): error C2653: 'clsLoanWorkings': is not a class or namespace name
-c:\users\james\source\repos\customerassignment\customerassignment\loanworkings.cpp(29): error C2065: 'dTotalPayable': undeclared identifier
-c:\users\james\source\repos\customerassignment\customerassignment\loanworkings.cpp(32): error C2065: 'clsLoan': undeclared identifier
-c:\users\james\source\repos\customerassignment\customerassignment\loanworkings.cpp(32): error C2923: 'std::vector': 'clsLoan' is not a valid template type argument for parameter '_Ty'
-c:\users\james\source\repos\customerassignment\customerassignment\loanworkings.cpp(32): error C2903: 'allocator': symbol is neither a class template nor a function template
-c:\users\james\source\repos\customerassignment\customerassignment\loanworkings.cpp(32): error C3203: 'allocator': unspecialized class template can't be used as a template argument for template parameter '_Alloc', expected a real type
   Generating Code...
+  CustomerAssignment.vcxproj -> C:\Users\James\source\repos\CustomerAssignment\Debug\CustomerAssignment.exe

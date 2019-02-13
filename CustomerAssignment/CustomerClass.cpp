@@ -13,20 +13,7 @@
 using namespace std;
 
 //The class clsCustomer, this will store the customer's information
-class clsCustomer
-{
-private:
-	string sName;
-	int iAge;
-	double dTotalEarnings;
-public:
-	void SetAge(int);
-	int GetAge();
-	void SetName(string);
-	string GetName();
-	void SetTotalEarnings(double);
-	double GetTotalEarnings();
-};
+
 
 //Passing sName through so it can be used
 void clsCustomer::SetName(string sNamePass)

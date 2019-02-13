@@ -1,12 +1,11 @@
 #include "pch.h"
 #include <iostream>
 #include <string>
-#include <iostream>
 #include <conio.h>
 #include <algorithm>
 #include <vector>
 #include "LoanClass.h"
-
+/*
 using namespace std;
 
 void clsLoanWorkings::SetTotal(double dTotalPass)
@@ -34,11 +33,14 @@ void SetLoanTotal(vector <clsLoan> *dTotalPass)
 	cout << "The total loan comes to: " << dTotalPass;
 }
 
-
-
-void ShowLoanInformation(vector <clsLoan> *objCustomerPass)
+void ShowLoanInformation(vector <clsCustomer> *objCustomerPass)
 {
-	cout << "The type of loan is for customer ";
-	cout << "The loan length is: \n";
-	cout << "The APR is: \n";
+	for (int iCount = 0; iCount < objCustomerPass->size(); iCount++)
+	{
+
+		cout << "The type of loan is for customer " << objCustomerPass->at(iCount).GetName() << iCount + 1;
+		cout << "The loan length is: \n";
+		cout << "The APR is: \n";
+	}
 }
+*/

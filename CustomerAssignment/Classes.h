@@ -29,8 +29,22 @@ public:
 	double GetMaxLoan();
 };
 
+class clsCustomer
+{
+private:
+	string sName;
+	int iAge;
+	double dTotalEarnings;
+public:
+	void SetAge(int);
+	int GetAge();
+	void SetName(string);
+	string GetName();
+	void SetTotalEarnings(double);
+	double GetTotalEarnings();
+};
 
-class clsLoanWorkings : public clsLoan
+class clsLoanWorkings : public clsLoan, public clsCustomer
 {
 private:
 	double dTotal;
