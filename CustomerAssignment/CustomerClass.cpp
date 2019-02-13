@@ -10,7 +10,6 @@
 #include <vector>
 #include "LoanClass.h"
 
-
 using namespace std;
 
 //The class clsCustomer, this will store the customer's information
@@ -152,6 +151,7 @@ int MenuSelection()
 
 	return iSelection;
 }
+
 //The menu system options
 void MenuOptions() {
 	cout << "\n1. Add customer \n";
@@ -190,13 +190,20 @@ void Menu()
 			break;
 		default:
 			cout << "Invalid input \n";
-			break;
 		}
 	} while (iSelection != 5);
 }
 
+void ShowLoanInformation(vector <clsLoan> *objLoanPass)
+{
+	cout << "The type of loan is: \n";
+	cout << "The loan length is: \n";
+	cout << "The APR is: \n";
+}
+
 int main()
 {
+	//Used to show the menu, remove this then the program stops working
 	Menu();
 	_getch();
 
