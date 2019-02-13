@@ -194,13 +194,6 @@ void Menu()
 	} while (iSelection != 5);
 }
 
-void ShowLoanInformation(vector <clsLoan> *objLoanPass)
-{
-	cout << "The type of loan is: \n";
-	cout << "The loan length is: \n";
-	cout << "The APR is: \n";
-}
-
 int main()
 {
 	//Used to show the menu, remove this then the program stops working

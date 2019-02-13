@@ -4,6 +4,7 @@
 
 #include "pch.h"
 #include <string>
+#include "LoanWorkings.cpp"
 
 using namespace std;
 
@@ -28,5 +29,17 @@ public:
 	double GetMaxLoan();
 };
 
+
+class clsLoanWorkings : public clsLoan
+{
+private:
+	double dTotal;
+	double dTotalPayable;
+public:
+	void SetTotal(double);
+	double GetTotal();
+	void SetTotalPayable(double);
+	double GetTotalPayable();
+};
 void Menu();
 void MenuOptions();
