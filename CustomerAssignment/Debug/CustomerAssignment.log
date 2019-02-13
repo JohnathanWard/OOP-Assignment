@@ -1,7 +1,5 @@
 ﻿  CustomerClass.cpp
-c:\users\james\source\repos\customerassignment\customerassignment\customerclass.cpp(72): warning C4018: '<': signed/unsigned mismatch
-c:\users\james\source\repos\customerassignment\customerassignment\customerclass.cpp(91): warning C4018: '<': signed/unsigned mismatch
-  LoanClass.cpp
-  LoanWorkings.cpp
-  Generating Code...
+c:\users\james\source\repos\customerassignment\customerassignment\customerclass.cpp(54): warning C4018: '<': signed/unsigned mismatch
+c:\users\james\source\repos\customerassignment\customerassignment\customerclass.cpp(70): warning C4018: '<': signed/unsigned mismatch
+c:\users\james\source\repos\customerassignment\customerassignment\customerclass.cpp(89): warning C4018: '<': signed/unsigned mismatch
   CustomerAssignment.vcxproj -> C:\Users\James\source\repos\CustomerAssignment\Debug\CustomerAssignment.exe

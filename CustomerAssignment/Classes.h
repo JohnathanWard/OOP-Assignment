@@ -29,6 +29,7 @@ public:
 	double GetMaxLoan();
 };
 
+//The class clsCustomer, this will store the customer's information
 class clsCustomer
 {
 private:
@@ -44,6 +45,7 @@ public:
 	double GetTotalEarnings();
 };
 
+//A class that does the maths for the loans
 class clsLoanWorkings : public clsLoan, public clsCustomer
 {
 private:

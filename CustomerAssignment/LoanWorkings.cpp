@@ -4,10 +4,10 @@
 #include <conio.h>
 #include <algorithm>
 #include <vector>
-#include "LoanClass.h"
-/*
-using namespace std;
+#include "Classes.h"
 
+using namespace std;
+/*
 void clsLoanWorkings::SetTotal(double dTotalPass)
 {
 	dTotal = dTotalPass;
@@ -37,10 +37,11 @@ void ShowLoanInformation(vector <clsCustomer> *objCustomerPass)
 {
 	for (int iCount = 0; iCount < objCustomerPass->size(); iCount++)
 	{
-
 		cout << "The type of loan is for customer " << objCustomerPass->at(iCount).GetName() << iCount + 1;
 		cout << "The loan length is: \n";
-		cout << "The APR is: \n";
+		cout << "The APR for one year is: \n";
+		cout << "The APR for the time required is: \n";
+		cout << "The amount comes to: \n";
 	}
 }
 */

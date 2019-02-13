@@ -1,6 +1,5 @@
 // CustomerAssignment.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
-
 #include "pch.h"
 #include <iostream>
 #include <string>
@@ -8,12 +7,9 @@
 #include <conio.h>
 #include <algorithm>
 #include <vector>
-#include "LoanClass.h"
+#include "Classes.h"
 
 using namespace std;
-
-//The class clsCustomer, this will store the customer's information
-
 
 //Passing sName through so it can be used
 void clsCustomer::SetName(string sNamePass)
@@ -52,18 +48,20 @@ double clsCustomer::GetTotalEarnings()
 }
 
 //Asks for the amount of customers to be stored in the system
-int UserAmount()
+void UserAmount(vector <clsCustomer> *objUserAmount)
 {
 	int iUserAmount;
-	cout << "Please insert the amount of customers \n";
-	cin >> iUserAmount;
-	return iUserAmount;
-
+	for (int iCount = 0; iCount < objUserAmount->size(); iCount++)
+	{
+		cout << "Please insert the amount of customers \n" << iCount + 1;
+		cin >> iUserAmount;
+		cout << "User created \n";
+	}
 }
 
 //Allows for the setting of customers details
 void SetCustomerDetails(vector <clsCustomer> *objCustomerPass)
-{
+{ 
 	string sName = "";
 	int iAge;
 	double dTotalEarnings;
@@ -164,7 +162,8 @@ void Menu()
 			AddUser(&objCustomer);
 			break;
 		case 2:
-			UserAmount();
+			UserAmount(&objCustomer);
+			AddUser(&objCustomer);
 			break;
 		case 3:
 			DeleteUser(&objCustomer);

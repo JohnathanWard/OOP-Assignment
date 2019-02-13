@@ -3,7 +3,7 @@
 #include <string>
 #include <conio.h>
 #include <array>
-#include "LoanClass.h"
+#include "Classes.h"
 
 using namespace std;
 
