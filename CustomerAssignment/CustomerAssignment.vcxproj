@@ -155,8 +155,8 @@
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CustomerClass.cpp" />
-    <ClCompile Include="LoanClass.cpp" />
+    <ClCompile Include="CustomerFunctions.cpp" />
+    <ClCompile Include="LoanClassFunctions.cpp" />
     <ClCompile Include="LoanWorkings.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

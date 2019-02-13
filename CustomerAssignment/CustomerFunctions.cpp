@@ -49,13 +49,9 @@ double clsCustomer::GetTotalEarnings()
 //Asks for the amount of customers to be stored in the system
 void UserAmount(vector <clsCustomer> *objCustomerPass)
 {
-	for (int iCount = 0; iCount < objCustomerPass->size(); iCount++)
-	{
 		int iUserAmount;
-		cout << "Please insert the amount of customers \n" << iCount + 1;
+		cout << "Please insert the amount of customers \n";
 		cin >> iUserAmount;
-		cout << "User created \n";
-	}
 }
 
 //Allows for the setting of customers details
@@ -90,7 +86,6 @@ void OutPutCustomerDetails(vector <clsCustomer> *objCustomerPass)
 		cout << "\nThe customers name is: \n" << objCustomerPass->at(iCount).GetName() << iCount + 1;
 		cout << "\nThe customers age is: \n" << objCustomerPass->at(iCount).GetAge() << iCount + 1;
 		cout << "\nThe customers total earnings are: \n" << objCustomerPass->at(iCount).GetTotalEarnings() << iCount + 1;
-
 	}
 }
 
@@ -116,7 +111,7 @@ void AddUser(vector <clsCustomer> *objCustomerPass)
 
 	objCustomerPass->push_back(objCustomerTemp);
 
-	cout << "The user " << sName << " has been created \n";
+	cout << "The customer " << sName << " has been created \n";
 }
 
 //Function to delete a user
@@ -125,6 +120,13 @@ void DeleteUser(vector <clsCustomer> *objCustomerPass)
 	objCustomerPass->pop_back();
 	cout << "User deleted \n";
 }
+
+void DeleteAllUsers(vector <clsCustomer> *objCustomerPass)
+{
+	objCustomerPass->clear();
+	cout << "All users deleted \n";
+}
+
 
 //Input for the menu system
 int MenuSelection()
@@ -141,8 +143,9 @@ void MenuOptions() {
 	cout << "\n1. Add customer \n";
 	cout << "2. Number of customers \n";
 	cout << "3. Delete customer \n";
-	cout << "4. Output every customer \n";
-	cout << "5. Exit \n";
+	cout << "4. Delete every customer \n";
+	cout << "5. Output every customer \n";
+	cout << "6. Exit \n";
 }
 
 //The menu system functionality
@@ -162,21 +165,24 @@ void Menu()
 			break;
 		case 2:
 			UserAmount(&objCustomer);
-			AddUser(&objCustomer);
+			SetCustomerDetails(&objCustomer);
 			break;
 		case 3:
 			DeleteUser(&objCustomer);
 			break;
 		case 4:
-			OutPutCustomerDetails(&objCustomer);
+			DeleteAllUsers(&objCustomer);
 			break;
 		case 5:
+			OutPutCustomerDetails(&objCustomer);
+			break;
+		case 6:
 			cout << "Exiting \n";
 			break;
 		default:
 			cout << "Invalid input \n";
 		}
-	} while (iSelection != 5);
+	} while (iSelection != 6);
 }
 
 int main()
