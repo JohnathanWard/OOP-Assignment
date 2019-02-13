@@ -46,38 +46,36 @@ double clsCustomer::GetTotalEarnings()
 	return dTotalEarnings;
 }
 
-//Asks for the amount of customers to be stored in the system
-void UserAmount(vector <clsCustomer> *objCustomerPass)
-{
-		int iUserAmount;
-		cout << "Please insert the amount of customers \n";
-		cin >> iUserAmount;
-}
-
 //Allows for the setting of customers details
 void SetCustomerDetails(vector <clsCustomer> *objCustomerPass)
-{ 
+{
 	string sName = "";
-	int iAge;
+	int iAge, iUserAmount;
 	double dTotalEarnings;
-	
+
+	cout << "How many customers would you like? \n";
+	cin >> iUserAmount;
+
 	objCustomerPass->push_back(clsCustomer());
-	for (int iCount = 0; iCount < objCustomerPass->size(); iCount++)
-	{
-		cout << "Please insert the customers name \n" << iCount + 1;
-		cin >> sName;
-		objCustomerPass->at(iCount).SetName(sName);
+	
+	for (int iCount = 0; iCount < iUserAmount; iCount++) {
+		for (int iCount = 0; iCount < objCustomerPass->size(); iCount++)
+		{
+			cout << "Please insert the customers name \n" << iCount + 1;
+			cin >> sName;
+			objCustomerPass->at(iCount).SetName(sName);
 
-		cout << "Please insert the customers age \n" << iCount + 1;
-		cin >> iAge;
-		objCustomerPass->at(iCount).SetAge(iAge);
+			cout << "Please insert the customers age \n" << iCount + 1;
+			cin >> iAge;
+			objCustomerPass->at(iCount).SetAge(iAge);
 
-		cout << "Please insert their total earnings \n" << iCount + 1;
-		cin >> dTotalEarnings;
-		objCustomerPass->at(iCount).SetTotalEarnings(dTotalEarnings);
+			cout << "Please insert their total earnings \n" << iCount + 1;
+			cin >> dTotalEarnings;
+			objCustomerPass->at(iCount).SetTotalEarnings(dTotalEarnings);
+			iUserAmount + 1;
+		}
 	}
 }
-
 //Outputs the customers details with the amount specified
 void OutPutCustomerDetails(vector <clsCustomer> *objCustomerPass)
 {
@@ -121,12 +119,12 @@ void DeleteUser(vector <clsCustomer> *objCustomerPass)
 	cout << "User deleted \n";
 }
 
+//This function will delete all of the users in the program
 void DeleteAllUsers(vector <clsCustomer> *objCustomerPass)
 {
 	objCustomerPass->clear();
 	cout << "All users deleted \n";
 }
-
 
 //Input for the menu system
 int MenuSelection()
@@ -142,8 +140,8 @@ int MenuSelection()
 void MenuOptions() {
 	cout << "\n1. Add customer \n";
 	cout << "2. Number of customers \n";
-	cout << "3. Delete customer \n";
-	cout << "4. Delete every customer \n";
+	cout << "3. Delete last customer entered \n";
+	cout << "4. Delete every customer entered \n";
 	cout << "5. Output every customer \n";
 	cout << "6. Exit \n";
 }
@@ -164,7 +162,6 @@ void Menu()
 			AddUser(&objCustomer);
 			break;
 		case 2:
-			UserAmount(&objCustomer);
 			SetCustomerDetails(&objCustomer);
 			break;
 		case 3:
