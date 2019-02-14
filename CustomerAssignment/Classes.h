@@ -4,7 +4,6 @@
 
 #include "pch.h"
 #include <string>
-#include "LoanWorkings.cpp"
 
 using namespace std;
 

@@ -4,7 +4,7 @@
 #include <conio.h>
 #include <array>
 #include "Classes.h"
-
+#include "Funct.h"
 using namespace std;
 
 void clsLoan::SetLoan(string sSetLoanPass)
