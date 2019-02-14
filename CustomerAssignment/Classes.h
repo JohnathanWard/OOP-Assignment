@@ -34,9 +34,11 @@ class clsCustomer
 {
 private:
 	string sName;
-	int iAge;
+	int iAge, iUserAmount;
 	double dTotalEarnings;
 public:
+	void SetAmount(int);
+	int GetAmount();
 	void SetAge(int);
 	int GetAge();
 	void SetName(string);
