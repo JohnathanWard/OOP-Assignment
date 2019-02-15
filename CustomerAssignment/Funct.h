@@ -7,6 +7,7 @@
 #include <array>
 #include "Classes.h"
 
+
 void AgeInfo();
 void ShowLoanInformation();
 void SetLoanTotal();

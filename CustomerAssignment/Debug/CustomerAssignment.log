@@ -1,6 +1,4 @@
 ﻿  CustomerFunctions.cpp
 c:\users\james\source\repos\customerassignment\customerassignment\customerfunctions.cpp(73): warning C4018: '<': signed/unsigned mismatch
-c:\users\james\source\repos\customerassignment\customerassignment\customerfunctions.cpp(86): warning C4552: '+': result of expression not used
 c:\users\james\source\repos\customerassignment\customerassignment\customerfunctions.cpp(93): warning C4018: '<': signed/unsigned mismatch
-c:\users\james\source\repos\customerassignment\customerassignment\customerfunctions.cpp(143): warning C4018: '<': signed/unsigned mismatch
   CustomerAssignment.vcxproj -> C:\Users\James\source\repos\CustomerAssignment\Debug\CustomerAssignment.exe

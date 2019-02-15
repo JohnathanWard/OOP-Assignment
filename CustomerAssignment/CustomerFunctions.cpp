@@ -64,12 +64,12 @@ void SetCustomerDetails(vector <clsCustomer> *objCustomerPass)
 	int iAge, iUserAmount;
 	double dTotalEarnings;
 
+//A small part of the function that allows the user to input multiple users
 	cout << "How many customers would you like? \n";
 	cin >> iUserAmount;
 
 	objCustomerPass->push_back(clsCustomer());
 	
-	for (int iCount = 0; iCount < iUserAmount; iCount++) {
 		for (int iCount = 0; iCount < objCustomerPass->size(); iCount++)
 		{
 			cout << "Please insert the customers name \n" << iCount + 1;
@@ -83,10 +83,10 @@ void SetCustomerDetails(vector <clsCustomer> *objCustomerPass)
 			cout << "Please insert their total earnings \n" << iCount + 1;
 			cin >> dTotalEarnings;
 			objCustomerPass->at(iCount).SetTotalEarnings(dTotalEarnings);
-			iUserAmount + 1;
 		}
 	}
-}
+
+
 //Outputs the customers details with the amount specified
 void OutPutCustomerDetails(vector <clsCustomer> *objCustomerPass)
 {
@@ -183,7 +183,6 @@ void Menu()
 			break;
 		case 5:
 			OutPutCustomerDetails(&objCustomer);
-			//AgeInfo();
 			break;
 		case 6:
 			cout << "Exiting \n";

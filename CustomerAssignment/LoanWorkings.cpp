@@ -48,11 +48,6 @@ void ShowLoanInformation(vector <clsCustomer> *objCustomerPass)
 	}
 }
 
-void LoanTotals(vector <clsLoan> *LoanPass)
-{
-	cout << "The loan the customer is eleigble for is: " << dTotal;
-}
-
 
 void AgeInfo(vector <clsCustomer> *objCustomerPass)
 {

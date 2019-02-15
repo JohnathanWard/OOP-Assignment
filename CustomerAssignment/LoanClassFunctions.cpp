@@ -57,6 +57,7 @@ double clsLoan::GetMaxLoan()
 	return dMaxLoan;
 }
 
+//Lets the customer input which loan they woud like based on statistics
 int InputCustomer()
 {
 	int iCustomerInput = 0;
@@ -65,6 +66,7 @@ int InputCustomer()
 	return iCustomerInput;
 }
 
+//Input selection for the loan type
 void InputSelection()
 {
 	cout << "1. Emergency \n";
@@ -72,6 +74,8 @@ void InputSelection()
 	cout << "3. Long Term \n";
 }
 
+//A do while loop for the loan types
+/* 
 void CustomerInputs()
 {
 	do {
@@ -103,4 +107,4 @@ void LoanAmounts(vector <clsCustomer> *objCustomerPass)
 		cout << "The loan will be financed over ";
 	}
 }
-
+*/
