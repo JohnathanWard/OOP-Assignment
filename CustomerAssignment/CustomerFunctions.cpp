@@ -94,7 +94,7 @@ void OutPutCustomerDetails(vector <clsCustomer> *objCustomerPass)
 	{
 		cout << "\nThe customers name is: " << objCustomerPass->at(iCount).GetName() << iCount + 1;
 		cout << "\nThe customers age is: " << objCustomerPass->at(iCount).GetAge() << iCount + 1;
-		cout << "\nThe customers total earnings are: " << objCustomerPass->at(iCount).GetTotalEarnings() << "\n "<< iCount + 1;
+		//cout << AgeInfo() << iCount + 1 << "\n";
 	}
 }
 
@@ -183,7 +183,7 @@ void Menu()
 			break;
 		case 5:
 			OutPutCustomerDetails(&objCustomer);
-			AgeInfo();
+			//AgeInfo();
 			break;
 		case 6:
 			cout << "Exiting \n";
@@ -198,7 +198,7 @@ int main()
 {
 	//Used to show the menu, remove this then the program stops working
 	Menu();
-	AgeInfo();
+	
 
 	_getch();
 

@@ -7,8 +7,8 @@
 #include <array>
 #include "Classes.h"
 
-
-int AgeInfo();
+void AgeInfo();
 void ShowLoanInformation();
 void SetLoanTotal();
 void LoanTotals();
+

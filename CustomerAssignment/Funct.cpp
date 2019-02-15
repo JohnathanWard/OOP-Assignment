@@ -3,10 +3,10 @@
 #include "Funct.h"
 #include "Classes.h"
 
-int AgeInfo()
-{
 
-	return 0;
+void AgeInfo()
+{
+	
 }
 
 void ShowLoanInformation()
@@ -23,3 +23,5 @@ void LoanTotals()
 {
 
 }
+
+

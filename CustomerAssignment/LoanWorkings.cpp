@@ -48,35 +48,11 @@ void ShowLoanInformation(vector <clsCustomer> *objCustomerPass)
 	}
 }
 
-
-void AgeInfo(vector <clsCustomer> *objCustomerPass)
-{
-	int iAge;
-	for (int iCount = 0; iCount < objCustomerPass.size(); iCount++) {
-		if (iAge < 18)
-		{
-			cout << "Customer is too young";
-			objCustomerPass->at(iCount).GetName();
-		}
-		else if (iAge > 18 < 21)
-		{
-			cout << "Customer qualifies for a short term loan";
-			objCustomerPass->at(iCount).GetName();
-		}
-		else if (iAge > 21)
-		{
-			cout << "Customer qualifies for a long term loan";
-			objCustomerPass->at(iCount).GetName();
-		}
-	}
-}
-
-
 void LoanTotals(vector <clsLoan> *LoanPass)
 {
 	cout << "The loan the customer is eleigble for is: " << dTotal;
 }
-*/
+
 
 void AgeInfo(vector <clsCustomer> *objCustomerPass)
 {
@@ -109,3 +85,4 @@ void AgeInfo(vector <clsCustomer> *objCustomerPass)
 		}
 	}
 }
+*/
